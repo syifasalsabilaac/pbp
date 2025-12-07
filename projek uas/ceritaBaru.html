@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/ceritaBaru.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+<body>
+    <header class="new">
+        <div class="kanan">
+            <div>
+                <a href="buatcerita.html" style="color: black;">
+                    <i class="bi bi-chevron-left"></i>
+                </a>
+            </div>
+            <div>
+            <p style="margin-top: 10px;">Tambahkan judul cerita <br> <b>Cerita Tak Berjudul</b></p>
+            </div>
+        </div>
+
+
+        <div class="kiri">
+            <a href="home.html" class="batalkan">
+                <p>Batalkan</p>
+            </a>
+        </div>
+
+    </header>
+
+    <div class="baru">
+        <form action="ceritaBaru.html">
+            <div class="detail">
+                <div class="detail1">
+                    <h5>Detail cerita</h5>
+                </div>
+
+                <div class="mb-3">
+                    <label for="formFile" class="form-label">Tambahkan sampul buku</label>
+                    <input class="form-control" type="file" id="formFile">
+                </div>
+
+                <label for="judul">Judul</label>
+                <input type="text" placeholder="Cerita Tak Berjudul">
+
+                <label for="deskripsi">Deskripsi</label>
+                <textarea class="fixed-textarea"></textarea>
+
+                <p>Hashtag</p>
+                <div class="tag-input-container">
+                    <div id="tags"></div>
+                    <input type="text" id="tagInput" placeholder="Tambahkan tag... (gunakan #)" />
+                </div>
+
+            </div>
+
+        </form>
+    </div>
+
+    <script>
+        const input = document.getElementById("tagInput");
+        const tagsContainer = document.getElementById("tags");
+
+        input.addEventListener("keyup", function (e) {
+        let value = input.value.trim();
+
+        // Jika menekan spasi atau enter
+        if ((e.key === " " || e.key === "Enter") && value.startsWith("#") && value.length > 1) {
+            addTag(value);
+            input.value = "";
+        }
+        });
+
+        function addTag(text) {
+        const tag = document.createElement("span");
+        tag.innerHTML = `${text} <i onclick="removeTag(this)" style="font-style:normal;">x</i>`;
+        tagsContainer.appendChild(tag);
+        }
+
+        function removeTag(el) {
+        el.parentElement.remove();
+        }
+
+    </script>
+    
+</body>
+</html>

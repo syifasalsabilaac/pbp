@@ -1,0 +1,32 @@
+body{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.folder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    margin: 30px 0 10px 0;
+}
+
+.button{
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: #FA812F;
+}
+
+.button span{
+    font-weight: bold;
+    padding-left: 7px;
+}
+
+.button:hover{
+    background-color: #FFB22C;
+}
+
+

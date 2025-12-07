@@ -1,0 +1,93 @@
+.daftar{
+    display: flex;
+    align-items: center;
+    width: 170px;
+    height: 45px;
+    padding: 10px 16px;
+    border-radius: 100px;
+    background: black;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.cerita{
+    display: flex;
+    flex-direction: column;
+    width: 605px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 20px;
+    gap: 30px;
+}
+
+.ceritAtas{
+    display: flex;
+    justify-content: space-between;
+}
+
+.buatCerita{
+    display: flex;
+    align-items: center;
+    width: 130px;
+    height: 35px;
+    padding: 10px 16px;
+    border-radius: 8px;
+    background: #FA812F;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    gap: 5px;
+    text-decoration: none;
+}
+
+.buatCerita:hover{
+    background: #FFB22C;
+}
+
+.ceritaSaya{
+    width: 607px;
+    height: auto;
+    padding-bottom: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.15);
+}
+
+.ceritaSaya .card{
+    margin-left: 30px;
+    margin-top: 20px;
+    width: 120px;
+    height: auto;
+}
+
+.barisCerita{
+    display: flex;
+    justify-content: space-between;
+}
+
+.detailCerita{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.lanjutnulis{
+    display: flex;
+    padding: 5px;
+    margin: 20px;
+    width: 145px;
+    height: 35px;
+    border-radius: 8px;
+    background-color: #FA812F;
+    border: none;
+    color: white;
+    text-decoration: none;
+}
+
+.lanjutnulis:hover{
+    background-color: #FFB22C;
+}
+
+@media only screen and (max-width: 768px) {
+    
+}
