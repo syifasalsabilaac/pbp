@@ -37,7 +37,7 @@ body{
     margin: 40px 0 0 40px;
 }
 
-.semua h3, .peringkat p{
+.semua h4, .peringkat , .genre h4{
     font-weight: bold;
 }
 
@@ -131,8 +131,64 @@ body{
     border-radius: 20px;
 }
 
+.genre{
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0 40px 40px;
+    gap: 5px;
 
+}
 
+.baris{
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scrollbar-width: none; 
+}
+
+.hashtag{
+    display: flex;
+    background-color: rgb(230, 230, 230);
+    max-width: 400px;
+    width: auto;
+    height: 40px;
+    text-transform: capitalize;
+    padding: 5px 10px 0 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.hashtag img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-top: -3px;
+}
+
+.lainnya{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 20px 40px;
+    gap: 10px;
+}
+
+.lainnya:hover{
+    transform: scale(1.02);
+    padding-left: 10px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+/* extra small devices (phone) */
+@media only screen and (max-width: 600px) { }
+
+/* small devices (potrait tablet, large phone, dll) */
+@media only screen and (min-width: 600px) { }
+
+/* medium devices (landscape tablets, split screen) */
 @media only screen and (max-width: 768px) {
    .sambutan{
         padding: 50px;
@@ -154,6 +210,16 @@ body{
         font-size: 10px;
     }
 }
+
+/* large devices (laptop) */
+@media only screen and (min-width: 992px){
+
+}
+
+/* extra large devices */
+@media only screen and (min-width: 1200px) { }
+
+
 
 
 
