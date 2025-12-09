@@ -1,3 +1,8 @@
+body{
+    font-family: "Quicksand", sans-serif;
+    font-style: normal;
+}
+
 .daftar{
     display: flex;
     align-items: center;
@@ -27,12 +32,16 @@
     justify-content: space-between;
 }
 
+.ceritAtas h4{
+    font-weight: bold;
+}
+
 .buatCerita{
     display: flex;
     align-items: center;
-    width: 130px;
+    width: 125px;
     height: 35px;
-    padding: 10px 16px;
+    padding-left: 10px;
     border-radius: 8px;
     background: #FA812F;
     color: white;
@@ -40,10 +49,14 @@
     cursor: pointer;
     gap: 5px;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .buatCerita:hover{
     background: #FFB22C;
+    font-size: 13px;
+    padding-left: 15px;
+    transition: all 0.2s ease-out;
 }
 
 .ceritaSaya{
@@ -58,10 +71,12 @@
     margin-top: 20px;
     width: 120px;
     height: auto;
+    flex-shrink: 0;
 }
 
 .barisCerita{
     display: flex;
+    align-items: flex-start;
     justify-content: space-between;
 }
 
@@ -69,11 +84,17 @@
     display: flex;
     flex-direction: column;
     margin-top: 20px;
+    flex-grow: 1;
+}
+
+.lagi{
+    display: flex;
+    gap: 40px;
 }
 
 .lanjutnulis{
     display: flex;
-    padding: 5px;
+    padding: 6px 0 0 10px;
     margin: 20px;
     width: 145px;
     height: 35px;
@@ -82,10 +103,48 @@
     border: none;
     color: white;
     text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
 }
 
 .lanjutnulis:hover{
     background-color: #FFB22C;
+    font-size: 12px;
+    padding: 7px 0 0 18px;
+    transition: all 0.2s ease-out;
+}
+
+.judul h5{
+    font-weight: bold;
+    text-transform: capitalize;
+    padding: 0;
+    margin: 0;
+}
+
+.draft{
+    display: flex;
+    font-weight: bold;
+    color: gray;
+    gap: 8px;
+}
+
+.publik{
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+    border-radius: 5px;
+    color: white;
+    height: 19px;
+    padding: 0 6px 0 6px;
+    margin-top: 3px;
+}
+
+.publik p{
+    font-size: 12px;
+}
+
+.privat p{
+    font-size: 15px;
 }
 
 @media only screen and (max-width: 768px) {
