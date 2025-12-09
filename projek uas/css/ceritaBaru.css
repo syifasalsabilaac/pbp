@@ -119,6 +119,12 @@ body{
     border: none;
 }
 
+.buat button:hover{
+    background-color: #FFB22C;
+    font-size: 15px;
+    transition: all 0.2s ease-in-out;
+}
+
 @media only screen and (max-width: 768px) {
     .detail{
         padding: 20px;
