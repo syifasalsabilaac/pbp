@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/ceritaBaru.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="new">
@@ -18,7 +19,7 @@
                 </a>
             </div>
             <div>
-            <p style="margin-top: 10px;">Tambahkan judul cerita <br> <b>Cerita Tak Berjudul</b></p>
+            <p style="margin-top: 10px;">Tambahkan detail cerita <br> <b>Cerita Tak Berjudul</b></p>
             </div>
         </div>
 
@@ -46,45 +47,31 @@
                 <label for="judul">Judul</label>
                 <input type="text" placeholder="Cerita Tak Berjudul">
 
+                <label for="genre-dropdown">Genre</label>
+                <div class="btn-group">
+                    
+                    <button class="btn btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Pilih Genre
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item">Horror</a></li>
+                    </ul>
+                </div>
+
                 <label for="deskripsi">Deskripsi</label>
                 <textarea class="fixed-textarea"></textarea>
 
-                <p>Hashtag</p>
-                <div class="tag-input-container">
-                    <div id="tags"></div>
-                    <input type="text" id="tagInput" placeholder="Tambahkan tag... (gunakan #)" />
+                <div class="buat">
+                    <button type="submit">
+                        Buat cerita
+                    </button>
                 </div>
 
             </div>
-
         </form>
     </div>
 
-    <script>
-        const input = document.getElementById("tagInput");
-        const tagsContainer = document.getElementById("tags");
-
-        input.addEventListener("keyup", function (e) {
-        let value = input.value.trim();
-
-        // Jika menekan spasi atau enter
-        if ((e.key === " " || e.key === "Enter") && value.startsWith("#") && value.length > 1) {
-            addTag(value);
-            input.value = "";
-        }
-        });
-
-        function addTag(text) {
-        const tag = document.createElement("span");
-        tag.innerHTML = `${text} <i onclick="removeTag(this)" style="font-style:normal;">x</i>`;
-        tagsContainer.appendChild(tag);
-        }
-
-        function removeTag(el) {
-        el.parentElement.remove();
-        }
-
-    </script>
+    <script src="bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
     
 </body>
 </html>
