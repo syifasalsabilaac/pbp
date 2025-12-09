@@ -171,13 +171,14 @@ body{
 .lainnya{
     display: flex;
     flex-direction: column;
-    margin: 0 0 20px 40px;
+    max-width: 170px;
+    width: 100%;
+    margin: 0 0 5px 40px;
     gap: 10px;
 }
 
 .lainnya:hover{
     transform: scale(1.02);
-    padding-left: 10px;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
 }
