@@ -1,0 +1,170 @@
+body{
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+}
+
+body{
+    font-family: "Quicksand", sans-serif;
+    font-style: normal;
+}
+
+.atas{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    border-bottom: 1px solid rgb(223, 223, 223);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.ini{
+    display: flex;
+    gap: 40px;
+}
+
+.itu{
+    display: flex;
+    gap: 10px;
+}
+
+.kembali{
+    color: black;
+    font-size: 25px;
+}
+
+.publik{
+    width: 125px;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    background: #FA812F;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.publik:hover{
+    background: #FFB22C;
+    color: black;
+    transition: all 0.2s ease-out;
+}
+
+.simpan{
+    width: 90px;
+    height: 35px;
+    border-radius: 20px;
+    border: 1px solid #FA812F;
+    background: white;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.simpan:hover{
+    border: 1px solid #FFB22C;
+    transition: all 0.2s ease-out;
+}
+
+.chapter-dropdown{
+    max-width: 1000px;
+    width: 100%;
+}
+
+.dropdown-toggle{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    border: none;
+    background: white;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+}
+
+
+.dropdown-toggle:after{
+    display: none !important;
+}
+
+.judul-cerita{
+    font-size: 13px;
+    color: #666;
+    font-weight: 500;
+}
+
+.judul-bab{
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+}
+
+.dropdown-list{
+    display: none;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 240px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    padding: 10px;
+    z-index: 100;
+    margin: 35px 73px;
+}
+
+.dropdown-list.active{
+    display: block;
+}
+
+.chapter-item{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+    font-weight: bold;
+}
+
+.new-chapter{
+    margin-top: 10px;
+    width: 100%;
+    background: #FA812F;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tulis{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.tempat{
+    width: 70%;
+    min-height: 400px;
+    padding: 30px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #333;
+}
+
+.tempar:focus .placeholder {
+    display: none;
+}
+
+/* Placeholder style */
+.placeholder{
+    color: #aaa;
+    pointer-events: none;
+}
+
