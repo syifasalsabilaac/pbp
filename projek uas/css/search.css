@@ -3,6 +3,8 @@ body{
 }
 
 .search{
+    max-width: 1290px;
+    width: 100%;
     padding: 20px;
     box-shadow: 0 8px 20px -10px rgba(0,0,0,0.15);
     margin-bottom: 30px;
@@ -130,6 +132,26 @@ body{
     text-overflow: ellipsis;
 }
 
+/* small phone */
+@media only screen and (max-width: 375px){
+    .search{
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box;
+    }
+
+    .hasil{
+        width: 100%;
+    }
+}
+
+/* medium phone */
+@media only screen and (max-width: 480px) { }
+
+/* large phone */
+@media only screen and (max-width: 576px) { }
+
+/* tablet potrait */
 @media only screen and (max-width: 768px){
     .hasil{
         width: 600px;
@@ -150,5 +172,12 @@ body{
     }
    
 }
+
+/* tablet landscape */
+@media only screen and (max-width: 1024px) { }
+
+/* large desktop */
+@media only screen and (max-width: 1280px) { }
+
 
 
