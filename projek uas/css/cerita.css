@@ -1,116 +1,155 @@
 body{
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
-
-.cerita{
-    display: flex;
-    justify-content: center;
+    font-family: "Quicksand", sans-serif;
+    font-style: normal;
 }
 
 .card{
-    margin: 20px;
-    max-width: 500px;
-    width: auto;
-    height: auto;
     border: none;
-    gap: 10px;
+}
+
+.atas{
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 8px 20px -10px rgba(0,0,0,0.15);
+    padding: 20px;
 }
 
 img{
     display: block;
     margin: 0 auto;
     width: 100%;
-    max-width: 250px;
+    max-width: 220px;
     height: auto;
     border-radius: 8px;
 }
 
 .buku{
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr;
     gap: 20px;
 }
 
 .samping{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding-top: 15px;
-    gap: 40px;
-}
-
-.judul h4{
-    font-weight: bold;
-    text-align: center;
-}
-
-.per{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width: 300px;
+    width: 100%;
+    align-items: flex-start;
+    padding-top: 15px;
+    gap: 20px;
+}
+
+.judul h4{
+    width: 100%;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    word-wrap: break-word;
+    line-height: 1.2;
+}
+
+.jumlah{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.jumlah hr{
+    width: 1.5px;
+    height: 25px;
+    background-color: black;
+    border: none;
+}
+
+.per{
+    text-align: center;
 }
 
 .icon{
     display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    color: gray !important;
 }
 
 .angka{
-    display: flex;
-    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
 }
 
 .button{
     display: flex;
     justify-content: center;
+    width: 100%;
     gap: 5px;
+}
+
+.button a{
+    font-weight: bold;
 }
 
 .btn{
     display: flex;
+    flex: 10;
     justify-content: center;
     align-items: center;
     background-color: #FA812F;  
     border-radius: 20px 0 0 20px;
+    color: white;
 }
 
-.btn:hover{
+.btn:hover, .btn-2:hover{
     background-color: #FFB22C;
+    color: black;
 }
 
 .btn-2{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
     background-color: #FA812F;  
     border-radius: 0 20px 20px 0;
     color: black;
-    padding-left: 10px;
+    padding: 0 13px 0 10px;
+    color: white;
 }
 
-.btn-2:hover{
-    background-color: #FFB22C;
+.bawah{
+    display: flex;
+    margin: 20px 20px 0 20px;
+    gap: 20px;
 }
 
-.penulis{
-    text-decoration: none;
-    color: black;
+.ini{
+    width: 50%;
 }
 
+.itu{
+    width: 50%;
+}
 
 .isi{
-    margin: 20px;
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    padding: 10px;
-    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px 0 20px;
     box-shadow: 0 0 15px rgba(0,0,0,0.15);
+    border-radius: 5px;
 }
 
-.isi h5{
-    font-weight: 700;
+.itu h5{
+    font-weight: bold;
 }
 
 .chap{
     display: flex;
+    justify-content: space-between;
+    font-weight: 500;
 }
 
 .detail a{
@@ -118,85 +157,29 @@ img{
     color: black;
 }
 
-@media only screen and (max-width: 768px) {
-    body{
-        width:auto;
-        height: auto;
-    }
+.penulis{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+}
 
-    .cerita{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+.status{
+    display: flex;
+    justify-content: center;
+    max-width: 85px;
+    width: 100%;
+    padding: 1px 10px;
+    height: 25px;
+    background-color: rgb(207, 0, 0);
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 5px;
+    margin: 25px 0;
+}
 
-    .card{
-        margin: 20px;
-    }
-
-    .samping{
-
-    }
-
-    .judul h4{
-        font-weight: bold;
-        text-align: center;
-        font-size: 20px;
-    }
-
-    .jumlah{
-        display: flex;
-        justify-content: center;
-        gap: 30px;
-    }
-
-    .per{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .icon{
-        display: flex;
-        height: 20px;
-        gap: 5px;
-    }
-
-    .angka{
-        display: flex;
-        justify-content: center;
-    }
-
-    .btn{
-        width: 120px;
-        height: 30px;
-
-        font-size: 15px;
-    }
-
-    .btn-2{
-        width: 35px;
-        height: 30px;
-        padding-top: 5px;
-        font-size: 14px;
-    }
-
-    .deskripsi p{
-        font-size: 13px;
-    }
-
-    .isi{
-        margin: 20px;
-        height: auto;
-        padding: 10px;
-    }
-
-    .isi h5{
-        font-weight: 700;
-    }
-
-    .detail a{
-        text-decoration: none;
-        color: black;
-    }
-    
+.deskripsi{
+    font-size: 15px;
+    font-weight: 500;
 }
