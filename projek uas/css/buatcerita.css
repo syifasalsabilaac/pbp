@@ -92,10 +92,15 @@ body{
     gap: 40px;
 }
 
+.button{
+    display: flex;
+    margin: 20px;
+    gap: 3px;
+}
+
 .lanjutnulis{
     display: flex;
     padding: 6px 0 0 10px;
-    margin: 20px;
     width: 145px;
     height: 35px;
     border-radius: 8px;
@@ -109,8 +114,20 @@ body{
 
 .lanjutnulis:hover{
     background-color: #FFB22C;
-    font-size: 12px;
-    padding: 7px 0 0 18px;
+    color: black;
+    transition: all 0.2s ease-out;
+}
+
+.hapus{
+    background-color: #FA812F;
+    border: none;
+    border-radius: 8px;
+    color: white;
+}
+
+.hapus:hover{
+    background-color: #FFB22C;
+    color: black;
     transition: all 0.2s ease-out;
 }
 
