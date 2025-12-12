@@ -3,16 +3,12 @@ body{
   font-style: normal;
 }
 
-body{
-    font-family: "Quicksand", sans-serif;
-    font-style: normal;
-}
-
 .atas{
     display: flex;
     justify-content: space-between;
     padding: 15px 20px;
     border-bottom: 1px solid rgb(223, 223, 223);
+    background-color: white;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -64,6 +60,7 @@ body{
 
 .simpan:hover{
     border: 1px solid #FFB22C;
+    color: #FFB22C;
     transition: all 0.2s ease-out;
 }
 
@@ -83,7 +80,6 @@ body{
     cursor: pointer;
     position: relative;
 }
-
 
 .dropdown-toggle:after{
     display: none !important;
@@ -140,31 +136,59 @@ body{
     cursor: pointer;
 }
 
+.tengah{
+    width: 1000px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center; /* Bikin .tengah ke tengah */
+    box-shadow: 0 0 15px rgba(0,0,0,0.15);
+    border-radius: 5px;
+}
+
+.chap{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chap p{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+.chap hr{
+    width: 830px;
+    border: 1px solid #ccc;
+}
+
+.edit{
+    max-width: 70%;
+    width: auto;
+    text-align: center;
+    padding: 20px 5px 0 5px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+}
+
 .tulis{
     width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
 }
 
-.tempat{
-    width: 70%;
-    min-height: 400px;
-    padding: 30px;
-    outline: none;
+.nulis{
+    width: 850px;          
+    min-height: 500px;
+    padding: 0 20px;
+    margin: 30px auto;
     border: none;
+    outline: none;
     font-size: 18px;
     line-height: 1.7;
-    color: #333;
+    font-weight: 500;
 }
 
-.tempar:focus .placeholder {
-    display: none;
-}
-
-/* Placeholder style */
-.placeholder{
-    color: #aaa;
-    pointer-events: none;
-}
 
