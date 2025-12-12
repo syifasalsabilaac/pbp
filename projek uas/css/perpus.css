@@ -1,32 +1,85 @@
 body{
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
+  font-family: "Quicksand", sans-serif;
   font-style: normal;
 }
 
-.folder{
+.buat{
     display: flex;
     justify-content: center;
+    margin: 10px;
+}
+
+.btn{
+    display: flex;
     align-items: center;
-    font-size: 16px;
-    margin: 30px 0 10px 0;
-}
-
-.button{
-    width: 150px;
-    height: 40px;
+    width: 145px;
+    height: 35px;
     border-radius: 20px;
-    border: none;
-    background-color: #FA812F;
-}
-
-.button span{
+    background: #FA812F;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    gap: 10px;
+    text-decoration: none;
     font-weight: bold;
-    padding-left: 7px;
 }
 
-.button:hover{
-    background-color: #FFB22C;
+.btn:hover{
+    background: #FFB22C;
+    font-size: 14.5px;
+    transition: all 0.2s ease-out;
 }
+
+.isi{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    gap: 20px;
+}
+
+.koleksi{
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    padding: 10px 0 0 20px;
+    border-radius: 8px;
+    height: 130px;
+}
+
+.koleksi:hover{
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+}
+
+.tanggal{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/* small phone */
+@media only screen and (max-width: 375px) { }
+
+/* medium phone */
+@media only screen and (max-width: 480px) { }
+
+/* large phone */
+@media only screen and (max-width: 576px) { }
+
+/* tablet potrait */
+@media only screen and (max-width: 768px) { }
+
+/* tablet landscape */
+@media only screen and (max-width: 1024px) { }
+
+/* large desktop */
+@media only screen and (max-width: 1280px) { }
+
+
+
 
 
