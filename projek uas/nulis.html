@@ -50,14 +50,48 @@
         </div>
       </div>
 
-      <div>
-        <div class="tulis">
-            <div class="tempat" contenteditable="true">
-                <p class="placeholder">Type your text</p>
+      <div class="tengah">
+        <div>
+          <form action="nulis.html">
+            <div class="chap">
+              <p>
+                chapter 01
+              </p>
+              <h2 contenteditable="true" class="edit" id="edit">
+                Bab Tak Berjudul 1
+              </h2>
+              <hr>
             </div>
+            <div class="tulis">
+              <div class="nulis" id="nulis" contenteditable="true">
+
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
+    
+    <script>
+      document.querySelector('.edit').addEventListener('keydown', function(e) {
+          if (e.key === "Enter") {
+              e.preventDefault(); // cegah baris baru
+          }
+      });
+    </script>
+
+    <script>
+      window.onload = function() {
+        const field = document.getElementById("nulis");
+        field.focus();
+      }
+    </script>
+
+
+    <script>
+      const judul = document.querySelector('.chap').innerText;
+      const isi = document.querySelector('.nulis').innerHTML;
+    </script>
 
     <script>
         document.querySelector(".dropdown-toggle").addEventListener("click", () => {
