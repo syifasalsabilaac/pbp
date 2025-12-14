@@ -38,6 +38,8 @@ body{
 }
 
 .koleksi{
+    display: flex;
+    justify-content: space-between;
     box-shadow: 0 0 10px rgba(0,0,0,0.15);
     padding: 10px 0 0 20px;
     border-radius: 8px;
@@ -59,6 +61,30 @@ body{
     color: black;
     font-weight: bold;
     font-size: 30px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin: 3px 15px 0 0;
+}
+
+button{
+    background-color: #FA812F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+}
+
+.button button:hover{
+    background-color: #FFB22C;
+    color: black;
+    transition: all 0.2s ease-in-out;
 }
 
 /* small phone */
